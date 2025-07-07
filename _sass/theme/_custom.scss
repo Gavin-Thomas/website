@@ -1,0 +1,20 @@
+/* My custom author profile styles */
+
+/* Increase the size of the author avatar */
+.author__avatar img {
+  max-width: 200px !important;  /* Adjust this value as you like */
+  width: 200px !important;
+  height: 200px !important;
+}
+
+/* Increase the size of all icons in the author profile */
+.author__urls.social-icons .fab,
+.author__urls.social-icons .fas,
+.author__urls.social-icons .ai {
+  font-size: 1.8em; /* Adjust for bigger/smaller icons */
+}
+
+/* Optional: Add a little more space between the larger icon and the text */
+.icon-pad-right {
+  padding-right: 10px;
+}

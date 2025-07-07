@@ -1,71 +1,119 @@
 /* ==========================================================================
-   My Custom Author Profile Styles
+   Responsive Custom Author Profile
    ========================================================================== */
 
-/* 1. Increase the size of the author avatar */
-.author__avatar img {
-  max-width: 200px !important;  /* Adjust this value as you like */
-  width: 200px !important;
-  height: 200px !important;
+/* --- Base Styles (Mobile First) --- */
+
+.author-profile {
+  // Styles for the main container
 }
 
-/* 2. Style the bio text to be centered and have more space */
+.author__sidebar {
+  text-align: center; // Center avatar and name on mobile
+}
+
+.author__avatar img {
+  max-width: 150px !important; // Slightly smaller for mobile
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  margin: 0 auto 1em;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.author__content {
+  // Container for name
+}
+
+.author__name {
+  margin-top: 0;
+}
+
+.author__main {
+  // Container for bio and links
+}
+
 .author__bio {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  
+  margin: 1.5em 0;
+
   p {
-    font-size: 1.1em; /* Make bio text slightly larger */
+    font-size: 1.1em;
     color: #555;
-    margin-bottom: 0.5em; /* Space between bio paragraphs */
+    margin-bottom: 0.5em;
   }
 }
 
-/* 3. Increase the size of ALL icons */
-.author__urls.social-icons .fab,
-.author__urls.social-icons .fas,
-.author__urls.social-icons .ai {
-  font-size: 1.8em; /* Adjust for bigger/smaller icons */
+.author__urls {
+  padding-left: 0; // Remove default list indentation
+  list-style-type: none;
 }
 
-/* Optional: Add a little more space between the larger icon and the text */
-.icon-pad-right {
-  padding-right: 10px;
+.author__url--featured a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none !important;
+  color: #212529 !important;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
 }
 
-/* 4. Styles for the large, featured link buttons */
-.author__url--featured {
-  list-style-type: none !important; /* Hide the bullet point */
-  margin-left: 0; /* Reset any indentation */
-  margin-bottom: 12px; /* Space between buttons */
-  
+.author__urls li:not(.author__url--featured) {
+  padding: 6px 0;
+  font-size: 1em;
+
   a {
-    display: block; /* Make the whole area clickable */
-    padding: 12px;
-    background-color: #f8f8f8; /* A very light gray background */
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Rounded corners for a "button" feel */
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-decoration: none !important;
-    color: #333 !important; /* A dark gray for text */
-    transition: all 0.2s ease-in-out; /* Smooth hover effect */
-
+    text-decoration: none;
+    color: #007bff;
     &:hover {
-      background-color: #e9ecef; /* Darken button on hover */
-      border-color: #ccc;
-      transform: translateY(-2px); /* Lift button slightly on hover */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-decoration: underline;
     }
   }
+
+  .ai, .fas, .fab {
+    color: #868e96;
+    width: 2em; // Align icons nicely
+  }
 }
 
-/* 5. Ensure the non-featured links stay as a simple list */
-.author__urls.social-icons li:not(.author__url--featured) {
-  text-align: left;
-  list-style-type: none; /* Hide bullets for these too for consistency */
-  margin-left: 0;
-  padding: 6px 0; /* Add a little vertical space */
+
+/* --- Desktop Styles (for screens 768px and wider) --- */
+
+@media screen and (min-width: 768px) {
+  .author-profile {
+    display: flex; // The magic for two columns!
+    align-items: flex-start; // Align columns to the top
+    gap: 2em; // Creates space between the two columns
+  }
+
+  .author__sidebar {
+    flex: 0 0 200px; // Sidebar is 200px wide and doesn't grow/shrink
+    text-align: center;
+  }
+
+  .author__avatar img {
+    max-width: 200px !important; // Larger avatar for desktop
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .author__main {
+    flex: 1; // Main content takes up the remaining space
+  }
+
+  .author__bio {
+    text-align: left; // Left-align bio text on desktop for readability
+  }
 }

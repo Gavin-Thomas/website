@@ -13,8 +13,7 @@ redirect_from:
 
 Education
 ======
-* **Doctor of Medicine (MD)**, University of Calgary, 2023-Present
-  * Expected completion: November 2025
+* **Doctor of Medicine (MD)**, University of Calgary, Class of 2028
   
 * **Master of Science in Neuroscience**, University of Calgary, 2023-2025
   * Thesis: Machine Learning Approaches for Cognitive Disorder Detection using Administrative Health Data
@@ -61,7 +60,7 @@ Publications
 * Joumaa V, Syed F, Howard JJ, **Thomas G**, et al. (2025). Maximal active force in skinned muscle fibres from children with cerebral palsy. *Journal of Biomechanics*. 186(112710).
 
 ### Conference Presentations
-* **Thomas G**, Smith E, Ismail Z, Goodarzi Z, Kirkham J, Seitz D. (2024). Eligibility for Treatment with Disease Modifying Therapies for Alzheimer's Disease Among Individuals Assessed in a Tertiary Care Specialty Dementia Clinical Program in Calgary, Alberta. *Canadian Geriatrics Journal*, Canadian Geriatrics Society Annual Meeting. **First Author**
+* **Thomas G**, Smith E, Ismail Z, Goodarzi Z, Kirkham J, Seitz D. (2024). Eligibility for Treatment with Disease Modifying Therapies for Alzheimer's Disease Among Individuals Assessed in a Tertiary Care Specialty Dementia Clinical Program in Calgary, Alberta. *Canadian Geriatrics Journal*, Canadian Geriatrics Society Annual Meeting. 
 
 * Chowdhury MZI, **Thomas G**, Smith EE, et al. (2024). Estimating Potential Eligibility for Disease Modifying Therapies for Alzheimer's Disease Using Population-Based Data in Alberta, Canada. *Alzheimer's & Dementia*, Alzheimer's Association International Conference (AAIC).
 

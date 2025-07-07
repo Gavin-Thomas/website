@@ -11,4 +11,4 @@ I'm Gavin, a medical student at the University of Calgary. I am interested in us
 
 Feel free to reach out!
 
-
+<img src="https://github.com/Gavin-Thomas/website/blob/master/images/autoencoder_converted.png?raw=true" alt="autoencoder diagram" width="500">

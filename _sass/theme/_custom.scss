@@ -1,13 +1,28 @@
-/* My custom author profile styles */
+/* ==========================================================================
+   My Custom Author Profile Styles
+   ========================================================================== */
 
-/* Increase the size of the author avatar */
+/* 1. Increase the size of the author avatar */
 .author__avatar img {
   max-width: 200px !important;  /* Adjust this value as you like */
   width: 200px !important;
   height: 200px !important;
 }
 
-/* Increase the size of all icons in the author profile */
+/* 2. Style the bio text to be centered and have more space */
+.author__bio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+  p {
+    font-size: 1.1em; /* Make bio text slightly larger */
+    color: #555;
+    margin-bottom: 0.5em; /* Space between bio paragraphs */
+  }
+}
+
+/* 3. Increase the size of ALL icons */
 .author__urls.social-icons .fab,
 .author__urls.social-icons .fas,
 .author__urls.social-icons .ai {
@@ -17,4 +32,40 @@
 /* Optional: Add a little more space between the larger icon and the text */
 .icon-pad-right {
   padding-right: 10px;
+}
+
+/* 4. Styles for the large, featured link buttons */
+.author__url--featured {
+  list-style-type: none !important; /* Hide the bullet point */
+  margin-left: 0; /* Reset any indentation */
+  margin-bottom: 12px; /* Space between buttons */
+  
+  a {
+    display: block; /* Make the whole area clickable */
+    padding: 12px;
+    background-color: #f8f8f8; /* A very light gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners for a "button" feel */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none !important;
+    color: #333 !important; /* A dark gray for text */
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+
+    &:hover {
+      background-color: #e9ecef; /* Darken button on hover */
+      border-color: #ccc;
+      transform: translateY(-2px); /* Lift button slightly on hover */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+  }
+}
+
+/* 5. Ensure the non-featured links stay as a simple list */
+.author__urls.social-icons li:not(.author__url--featured) {
+  text-align: left;
+  list-style-type: none; /* Hide bullets for these too for consistency */
+  margin-left: 0;
+  padding: 6px 0; /* Add a little vertical space */
 }

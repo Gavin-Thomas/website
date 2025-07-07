@@ -23,13 +23,13 @@ repository               : "https://gavin-thomas.github.io/website"
 author:
   # Biographic information
   avatar           : "converted_image.png"
-  name             : "Gavin Thomas"
-  pronouns         : # example: "she/her"  
-  bio              : "Medical Student"
+  name             : ""
+  pronouns         : ""
+  bio              : "MS1 @ UCalgary"
   location         : "University of Calgary"
   employer         : # "Red Brick University"
   uri              : # URL
-  email            : # "gavin.thomas@ucalgary.ca" 
+  email            : "gavin.thomas@ucalgary.ca" 
 
   # Academic websites
   academia         : # URL

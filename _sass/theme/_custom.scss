@@ -1,54 +1,49 @@
 /* ==========================================================================
-   Responsive Custom Author Profile
+   Final Author Profile Styles for Sidebar
    ========================================================================== */
 
-/* --- Base Styles (Mobile First) --- */
-
-.author-profile {
-  // Styles for the main container
+/* Center the entire sidebar's content */
+.author__avatar,
+.author__content,
+.author__urls-wrapper {
+  text-align: center;
 }
 
-.author__sidebar {
-  text-align: center; // Center avatar and name on mobile
-}
-
+/* Style the circular avatar */
 .author__avatar img {
-  max-width: 150px !important; // Slightly smaller for mobile
-  width: 150px !important;
-  height: 150px !important;
+  max-width: 160px !important;
+  width: 160px !important;
+  height: 160px !important;
   border-radius: 50% !important;
-  margin: 0 auto 1em;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 0 auto 1em !important;
+  border: 4px solid #fff; // Optional: adds a nice white border
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.author__content {
-  // Container for name
-}
-
+/* Style the name and bio */
 .author__name {
   margin-top: 0;
-}
-
-.author__main {
-  // Container for bio and links
+  margin-bottom: 0.5em;
 }
 
 .author__bio {
-  text-align: center;
-  margin: 1.5em 0;
-
-  p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 0.5em;
-  }
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 0.25em;
 }
 
+.author__urls-wrapper {
+  margin-top: 1.5em; // Space above the buttons
+}
+
+/* Reset list styles */
 .author__urls {
-  padding-left: 0; // Remove default list indentation
+  padding-left: 0;
   list-style-type: none;
 }
 
+/* Style the main featured buttons */
 .author__url--featured a {
   display: block;
   padding: 12px;
@@ -57,7 +52,6 @@
   border: 1px solid #dee2e6;
   border-radius: 8px;
   font-weight: bold;
-  text-align: center;
   text-decoration: none !important;
   color: #212529 !important;
   transition: all 0.2s ease;
@@ -70,9 +64,17 @@
   }
 }
 
+/* Style the remaining text-based links */
 .author__urls li:not(.author__url--featured) {
-  padding: 6px 0;
-  font-size: 1em;
+  padding: 4px 0;
+  font-size: 0.9em;
+  text-align: left; // Left-align for readability
+  padding-left: 20px; // Indent them slightly
+
+  .ai, .fas, .fab {
+    color: #868e96;
+    width: 1.5em; // Align the icons
+  }
 
   a {
     text-decoration: none;
@@ -80,40 +82,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  .ai, .fas, .fab {
-    color: #868e96;
-    width: 2em; // Align icons nicely
-  }
-}
-
-
-/* --- Desktop Styles (for screens 768px and wider) --- */
-
-@media screen and (min-width: 768px) {
-  .author-profile {
-    display: flex; // The magic for two columns!
-    align-items: flex-start; // Align columns to the top
-    gap: 2em; // Creates space between the two columns
-  }
-
-  .author__sidebar {
-    flex: 0 0 200px; // Sidebar is 200px wide and doesn't grow/shrink
-    text-align: center;
-  }
-
-  .author__avatar img {
-    max-width: 200px !important; // Larger avatar for desktop
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .author__main {
-    flex: 1; // Main content takes up the remaining space
-  }
-
-  .author__bio {
-    text-align: left; // Left-align bio text on desktop for readability
   }
 }

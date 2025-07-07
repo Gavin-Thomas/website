@@ -4,28 +4,6 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<!-- STYLES to increase image and icon sizes -->
-<style>
-  /* --- Increase the size of the author avatar --- */
-  .author__avatar img {
-    max-width: 200px; /* Adjust this value to your liking */
-    width: 200px;     /* Adjust this value to your liking */
-    height: 200px;    /* Adjust this value to your liking */
-  }
-
-  /* --- Increase the size of all icons --- */
-  .author__urls.social-icons i {
-    font-size: 1.8em; /* Adjust this value to your liking */
-  }
-
-  /* Optional: Adjust spacing if icons are too close to text */
-  .icon-pad-right {
-    padding-right: 10px;
-  }
-</style>
-<!-- END STYLES -->
-
-
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">

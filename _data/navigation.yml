@@ -9,7 +9,7 @@
 
 main:
   - title: "Research"
-    url: /publications_/research.md
+    url: /_publications/
 
   - title: "Projects"
     url: /year-archive/

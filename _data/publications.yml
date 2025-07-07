@@ -1,0 +1,33 @@
+# _data/publications.yml
+# Add a new publication to the list by adding a new entry starting with a hyphen.
+# Use the "type" field to categorize: "Journal Article" or "Conference Presentation".
+
+- title: "Maximal active force in skinned muscle fibres from children with cerebral palsy"
+  type: "Journal Article"
+  date: 2025-01-01 # Use YYYY-MM-DD for sorting
+  venue: "Journal of Biomechanics"
+  excerpt: "Published in Journal of Biomechanics, volume 186, article 112710."
+  # paperurl: "http://link.to.your.paper.pdf" # Optional: link to the PDF
+  citation: "Joumaa V, Syed F, Howard JJ, Thomas G, et al. (2025). "Maximal active force in skinned muscle fibres from children with cerebral palsy." <i>Journal of Biomechanics</i>. 186(112710)."
+
+- title: "Eligibility for Treatment with Disease Modifying Therapies for Alzheimer’s Disease Among Individuals Assessed in a Tertiary Care Specialty Dementia Clinical Program in Calgary, Alberta"
+  type: "Conference Presentation"
+  date: 2024-05-01 # Using May for CGS annual meeting
+  venue: "Canadian Geriatrics Society Annual Meeting"
+  excerpt: "Presented at the Canadian Geriatrics Society Annual Meeting and published in the Canadian Geriatrics Journal."
+  # paperurl: "http://link.to.your.poster.pdf" # Optional: link to poster/slides
+  citation: "Thomas G, Smith E, Ismail Z, Goodarzi Z, Kirkham J, Seitz D. (2024). "Eligibility for Treatment with Disease Modifying Therapies..." <i>Canadian Geriatrics Journal</i>, Canadian Geriatrics Society Annual Meeting."
+
+- title: "Estimating Potential Eligibility for Disease Modifying Therapies for Alzheimer’s Disease Using Population-Based Data in Alberta, Canada"
+  type: "Conference Presentation"
+  date: 2024-07-01 # Using July for AAIC
+  venue: "Alzheimer’s Association International Conference (AAIC)"
+  excerpt: "Presented at the Alzheimer’s Association International Conference (AAIC) and published in Alzheimer’s & Dementia."
+  citation: "Chowdhury MZI, Thomas G, Smith EE, et al. (2024). "Estimating Potential Eligibility for Disease Modifying Therapies..." <i>Alzheimer’s & Dementia</i>, Alzheimer’s Association International Conference (AAIC)."
+
+- title: "An Investigation of Active Force in Skeletal Muscle Fibers from Children With Cerebral Palsy"
+  type: "Conference Presentation"
+  date: 2023-04-01 # Using April for CASEM conference
+  venue: "CASEM Annual Conference"
+  excerpt: "Presented at the CASEM Annual Conference and published in the Clinical Journal of Sport Medicine."
+  citation: "Thomas G, Joumaa V, Leonard T, Howard J, Holash R, Herzog W. (2023). "An Investigation of Active Force in Skeletal Muscle Fibers..." <i>Clinical Journal of Sport Medicine</i>, CASEM Annual Conference."

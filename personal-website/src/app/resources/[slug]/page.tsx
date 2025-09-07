@@ -41,7 +41,7 @@ export default async function ArticlePage({
 
   if (!article) {
     return (
-      <article className="prose prose-invert max-w-none">
+      <article className="prose max-w-none">
         <h1 className="text-4xl font-bold mb-4">Article not found</h1>
         <p className="opacity-80">We couldn't find the requested article.</p>
       </article>
@@ -52,11 +52,11 @@ export default async function ArticlePage({
   const hasContent = Boolean(article.md /*|| mdFromSource*/);
 
   return (
-    <article className="prose prose-invert max-w-none">
+    <article className="prose max-w-none">
       <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
 
       {!hasContent ? (
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="rounded-2xl border border-secondary bg-secondary p-6">
           <p className="m-0 font-medium">This page is empty for now.</p>
           <p className="m-0 opacity-80">
             {/* Visible note for developers/users */}

@@ -7,11 +7,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: '/', label: 'Home' },
     { href: '/research', label: 'Research' },
     { href: '/projects', label: 'Projects' },
-    { href: '/hobbies', label: 'Hobbies' },
-    { href: '/education', label: 'Education' },
+    { href: '/resources', label: 'Resources' },
     { href: '/cv.pdf', label: 'CV' },
   ];
 

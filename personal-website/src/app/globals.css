@@ -13,9 +13,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Inter", sans-serif;
-  --font-mono: "Fira Code", monospace;
   --font-serif: "Georgia", serif;
+  --font-mono: "Fira Code", monospace;
 }
 
 @media (prefers-color-scheme: dark) {

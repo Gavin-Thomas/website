@@ -48,18 +48,18 @@ const ProjectsPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <FadeIn key={project.name} delay={0.4 + index * 0.2}>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col h-full">
+            <div className="bg-secondary p-6 rounded-lg shadow-lg flex flex-col h-full">
               <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
-              <p className="text-gray-400 mb-4 flex-grow">{project.description}</p>
+              <p className="text-secondary-foreground mb-4 flex-grow">{project.description}</p>
 
               {project.link ? (
                 <Link href={project.link} target="_blank" rel="noopener noreferrer" className="self-start">
-                  <span className="text-blue-400 hover:underline cursor-pointer">
+                  <span className="text-ucalgary-red hover:underline cursor-pointer">
                     {project.linkLabel ?? 'View project'}
                   </span>
                 </Link>
               ) : (
-                <span className="text-gray-500 text-sm">Private / link pending</span>
+                <span className="text-secondary-foreground opacity-70 text-sm">Private / link pending</span>
               )}
             </div>
           </FadeIn>

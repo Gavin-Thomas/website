@@ -72,7 +72,7 @@ const ResearchPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
+            <span className="bg-ucalgary-red hover:bg-ucalgary-red/90 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
               Google Scholar
             </span>
           </Link>
@@ -81,7 +81,7 @@ const ResearchPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
+            <span className="bg-ucalgary-red hover:bg-ucalgary-red/90 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer">
               ResearchGate
             </span>
           </Link>
@@ -91,14 +91,14 @@ const ResearchPage = () => {
       <div className="space-y-8">
         {publications.map((pub, index) => (
           <FadeIn key={index} delay={0.6 + index * 0.2}>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div className="bg-secondary p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-2">{pub.title}</h2>
-              <p className="text-gray-400 mb-2">{pub.authors}</p>
-              <p className="text-gray-500 italic mb-4">
+              <p className="text-secondary-foreground mb-2">{pub.authors}</p>
+              <p className="text-secondary-foreground opacity-70 italic mb-4">
                 {pub.journal}, {pub.year}
               </p>
               <Link href={pub.link} target="_blank" rel="noopener noreferrer">
-                <span className="text-blue-400 hover:underline cursor-pointer">
+                <span className="text-ucalgary-red hover:underline cursor-pointer">
                   Read Publication
                 </span>
               </Link>
